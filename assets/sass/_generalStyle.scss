@@ -19,6 +19,20 @@ h1, h2, h3{
     font-family: LibreCaslonDisplay;
 }
 
+h1{
+    font-size: 3rem;
+    margin: 2vh auto;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 2vh 0 4vh 0;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
 ul{
     list-style: none;
 }
@@ -27,4 +41,8 @@ a, p{
     font-family: OpenSans;
     color: #000;
     text-decoration: none;
+}
+
+img{
+    width: 100%;
 }

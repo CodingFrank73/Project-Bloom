@@ -16,6 +16,20 @@ h1, h2, h3 {
   font-family: LibreCaslonDisplay;
 }
 
+h1 {
+  font-size: 3rem;
+  margin: 2vh auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 2vh 0 4vh 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 ul {
   list-style: none;
 }
@@ -26,8 +40,16 @@ a, p {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+main {
+  margin: 0 5%;
+}
+
 header {
-  height: 20vh;
+  height: 16vh;
   border-bottom: 2px solid #f5f5f5;
 }
 header h1 {
@@ -36,13 +58,23 @@ header h1 {
 header nav ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
+}
+header a {
+  font-size: 1.5rem;
 }
 
 .home-subscriptions {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4% 0;
+}
+.home-subscriptions p {
+  padding: 0% 10%;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 25px;
 }
 
 .options {
@@ -56,6 +88,7 @@ header nav ul {
 .options .container {
   text-align: center;
   padding: 10% 0;
+  padding: 0 5%;
 }
 .options a {
   grid-column: 1/span 2;
