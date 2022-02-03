@@ -1,13 +1,8 @@
 
-@font-face {
-    font-family: LibreCaslonDisplay;
-    src: url(../fonts/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Open+Sans:wght@300;400;500;600&display=swap');
 
-@font-face {
-    font-family: OpenSans;
-    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+@import '_variables.scss';
+@import '_mixin.scss';
 
 *{
     margin: 0;
@@ -15,34 +10,42 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3{
-    font-family: LibreCaslonDisplay;
+h1, h2, h3 {
+    font-family: 'Libre Caslon Display', serif;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 2vh auto;
 }
 
 h2{
-    font-size: 2rem;
-    margin: 2vh 0 4vh 0;
+    font-size: 2.5rem;
+    padding: 1% 0 2% 0;
 }
 
 h3{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: 5% 0%;
+}
+
+a, p, li {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color-main;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+a, li{
+    text-decoration: none;
 }
 
 ul{
     list-style: none;
 }
 
-a, p{
-    font-family: OpenSans;
-    color: #000;
-    text-decoration: none;
-}
-
 img{
     width: 100%;
+    height: 100%;
 }
