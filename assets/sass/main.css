@@ -144,13 +144,6 @@ footer nav ul li {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    height: 40vh;
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-
   .options {
     display: flex;
     flex-direction: column;
@@ -159,5 +152,14 @@ footer nav ul li {
   .flowers figcaption {
     padding: 5% 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 815px) {
+  header {
+    height: 40vh;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
