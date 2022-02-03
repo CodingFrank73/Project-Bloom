@@ -1,0 +1,80 @@
+@font-face {
+  font-family: LibreCaslonDisplay;
+  src: url(../fonts/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: LibreCaslonDisplay;
+}
+
+ul {
+  list-style: none;
+}
+
+a, p {
+  font-family: OpenSans;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  height: 20vh;
+  border-bottom: 2px solid #f5f5f5;
+}
+header h1 {
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home-subscriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.options h2 {
+  grid-column: 1/span 2;
+  text-align: center;
+}
+.options .container {
+  text-align: center;
+  padding: 10% 0;
+}
+.options a {
+  grid-column: 1/span 2;
+  color: #fff;
+  width: 50%;
+  padding: 20px;
+  background-color: #3d4246;
+}
+
+footer {
+  background-color: #f5f5f5;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */
