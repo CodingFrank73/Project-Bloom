@@ -141,4 +141,23 @@ footer nav ul {
 }
 footer nav ul li {
   padding-left: 12%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 40vh;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flowers figcaption {
+    padding: 5% 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
