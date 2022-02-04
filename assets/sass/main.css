@@ -108,6 +108,7 @@ header a:hover {
   letter-spacing: 5px;
   padding: 1% 21%;
   background-color: #3d4246;
+  text-align: center;
 }
 .options .btn-start a:hover {
   background-color: #f5f5f5;
@@ -144,9 +145,17 @@ footer nav ul li {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
   .options {
     display: flex;
     flex-direction: column;
+  }
+  .options .btn-start a {
+    font-size: 1rem;
+    padding: 1% 10%;
   }
 
   .flowers figcaption {

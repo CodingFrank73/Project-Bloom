@@ -79,6 +79,7 @@ header{
             letter-spacing: 5px;
             padding: 1% 21%;
             background-color: $bg-color-btn-main;
+            text-align: center;
         }
 
         a:hover{
@@ -126,13 +127,24 @@ footer{
 
 @media  screen and (max-width: 768px){
     
+    body{
+        text-align: center;
+    }
+
     .options{
         display: flex;
         flex-direction: column;
+
+        & .btn-start{
+            a{
+                font-size: 1rem;
+                padding: 1% 10%;
+            }
+        }
+
     }
 
     .flowers{
-    
         figcaption{
             padding: 5% 0;
             text-align: center;
@@ -143,7 +155,7 @@ footer{
     
     header{
         height: 40vh;
-        
+
         nav{
             ul{
                 flex-direction: column;
