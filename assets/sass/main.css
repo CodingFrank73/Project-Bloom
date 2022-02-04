@@ -144,6 +144,11 @@ footer nav ul li {
   padding-left: 12%;
 }
 
+@media screen and (max-width: 400px) {
+  header {
+    height: 50vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     text-align: center;
