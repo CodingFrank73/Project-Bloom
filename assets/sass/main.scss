@@ -7,7 +7,6 @@ main{
 }
 
 header{
-    height: 18vh;
     border-bottom: 2px solid $border-color;
 
     h1{
@@ -15,6 +14,8 @@ header{
     }
 
     nav{
+        margin-bottom: 3%;
+
         ul{
             display: flex;
             justify-content: center;
@@ -46,8 +47,6 @@ header{
     figure{
         padding-bottom: 9%;
     }
-
-    
 }
 
 .options{
@@ -60,31 +59,25 @@ header{
     }
 
     & .container{
-        padding: 3% 14%;
+        padding: 3% 10%;
 
         li{
             padding: 3% 0;
         }
-        
     }
 
-    & .btn-start{
+    a{
         grid-column: 1/span 2;
-        text-align: center;
-        padding: 1% 0% 6% 0%;
+        letter-spacing: 5px;
+        margin: 0 auto;
+        padding: 1% 21%;
+        color: $font-color-secondary;
+        border: 1px solid $bg-color-btn-main;
+        background-color: $bg-color-btn-main;
+    }
 
-        a{
-            font-family: LibreCaslonDisplay;
-            color: $font-color-secondary;
-            letter-spacing: 5px;
-            padding: 1% 21%;
-            background-color: $bg-color-btn-main;
-            text-align: center;
-        }
-
-        a:hover{
-            @include btn-hover;
-        }
+    a:hover{
+        @include btn-hover;
     }
 }
 
@@ -103,37 +96,16 @@ footer{
     
     nav{
         padding: 2% 12%;
-        display: flex;
-        align-items: center;
         
-        p, a{
-            font-size: 1rem;
-            font-family: LibreCaslonDisplay;
-        }
-
         ul{
             display: flex;
-            align-items: center;
-            width: 100%;
-            
-
-            li{
-                padding-left: 12%;
-            }
+            justify-content: space-between;
+            width: 65%;
         }
     }
-
 }
 
-@media screen and(max-width: 375px) {
-    header{
-        height: 60vh;
-        color: rebeccapurple;
-    }
-}
-
-@media  screen and (max-width: 768px){
-    
+@media  screen and (max-width: 815px) {
     body{
         text-align: center;
     }
@@ -142,32 +114,23 @@ footer{
         display: flex;
         flex-direction: column;
 
-        & .btn-start{
-            a{
-                font-size: 1rem;
-                padding: 1% 10%;
-            }
+        a{
+            font-size: 1rem;
         }
-
     }
 
     .flowers{
         figcaption{
             padding: 5% 0;
-            text-align: center;
         }
     }
-}
-@media  screen and (max-width: 815px) {
-    
-    header{
-        height: 40vh;
 
-        nav{
-            ul{
+        nav ul{
                 flex-direction: column;
-                align-items: center;
             }
+
+        footer nav ul{
+            width: unset;
         }
-    }
+    
 }
